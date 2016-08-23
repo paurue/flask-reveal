@@ -80,7 +80,8 @@
           { src: '{{ url_for("static", filename="plugin/markdown/markdown.js") }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: '{{ url_for("static", filename="plugin/highlight/highlight.js") }}', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: '{{ url_for("static", filename="plugin/zoom-js/zoom.js") }}', async: true },
-          { src: '{{ url_for("static", filename="plugin/notes/notes.js") }}', async: true }
+          { src: '{{ url_for("static", filename="plugin/notes/notes.js") }}', async: true },
+          { src: '{{ url_for("static", filename="plugin/math/math.js") }}', async: true },
         ]
       });
     </script>
